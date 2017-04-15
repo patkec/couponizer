@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Couponizer", "Couponizer\Couponizer.csproj", "{BAFF6542-0712-40F3-B61C-F264EC9944D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Couponizer.UI", "Couponizer.UI\Couponizer.UI.csproj", "{792DE55D-DD1E-4C9D-87A6-FDC4F495577A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAFF6542-0712-40F3-B61C-F264EC9944D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFF6542-0712-40F3-B61C-F264EC9944D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFF6542-0712-40F3-B61C-F264EC9944D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFF6542-0712-40F3-B61C-F264EC9944D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792DE55D-DD1E-4C9D-87A6-FDC4F495577A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792DE55D-DD1E-4C9D-87A6-FDC4F495577A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792DE55D-DD1E-4C9D-87A6-FDC4F495577A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792DE55D-DD1E-4C9D-87A6-FDC4F495577A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

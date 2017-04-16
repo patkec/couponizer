@@ -7,6 +7,7 @@ import { Http } from '@angular/http';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+    public title = 'Couponizer';
     public values: string[] = [];
 
     constructor(private _httpService: Http) { }

@@ -1,3 +1,74 @@
+$navbar-height: 56px;
+
+md-toolbar.mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: $navbar-height;
+
+    /deep/ .mat-toolbar-row {
+        height: $navbar-height;
+
+        .menu-button {
+            display: none;
+        }
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        /deep/ .mat-toolbar-row {
+            flex-direction: column;
+            align-items: initial;
+            padding-bottom: 8px;
+
+            header {
+                display: flex;
+                flex-direction: row;
+                margin-top: 8px;
+                align-items: center;
+                justify-content: space-between;
+
+                .menu-button {
+                    display: inline-block;
+                }
+            }
+
+            .spacer {
+                display: none;
+            }
+
+            [md-button] {
+                width: 100%;
+                text-align: left;
+                display: none;
+            }
+        }
+
+        /* expanded class has to be on toolbar instead of toolbar row, see https://github.com/angular/material2/issues/1718 */
+        &.expanded /deep/ .mat-toolbar-row {
+            height: auto;
+
+            [md-button] {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+md-toolbar + * {
+    margin-top: $navbar-height;
+}
+
+.background {
+    height: 100%;
+    /* background-image: url(../assets/background.jpg);
+    background-size: cover; */
+}
+
 .header {
     background-color: lightyellow;
 }

@@ -1,6 +1,15 @@
-﻿<md-toolbar>
-    <h1>{{ title }}</h1>
-    <button md-button>Test</button>
+﻿<md-toolbar color="primary" [class.expanded]="expanded">
+    <header>
+        <span>{{ title }}</span>
+        <button class="menu-button" md-icon-button (click)="expanded = !expanded">
+            <md-icon>menu</md-icon>
+        </button>
+    </header>
+
+    <span class="spacer"></span>
+    <button md-button>Button 1</button>
+    <button md-button>Button 1</button>
+    <button md-button>Button 1</button>
 </md-toolbar>
 
 <div fxLayout="column">

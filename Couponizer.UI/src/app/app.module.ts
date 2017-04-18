@@ -7,10 +7,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { MenuNavbarComponent } from './menu-navbar/menu-navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuNavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Inject, ViewEncapsulation, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-menu-navbar',
@@ -8,9 +9,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MenuNavbarComponent implements OnInit {
 
-    constructor() { }
+    constructor(@Inject(DOCUMENT) private document: Document) { }
 
     ngOnInit() {
+    }
+
+    @HostListener('window:scroll')
+    private onScroll() {
+        console.log(this.document.body.scrollTop);
     }
 
 }

@@ -7,6 +7,7 @@ app-menu-navbar {
         left: 0;
         right: 0;
         min-height: $navbar-height;
+        z-index: 1030;
 
         .mat-toolbar-row {
             height: $navbar-height;

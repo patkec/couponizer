@@ -7,8 +7,9 @@ describe('couponizer App', () => {
     page = new CouponizerPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying app works', async () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    const paragraphText = await page.getParagraphText();
+    expect(paragraphText).toEqual('app works!');
   });
 });
